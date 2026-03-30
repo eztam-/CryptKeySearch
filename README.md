@@ -163,7 +163,7 @@ Doing the same math for other Apple Silicon GPUs:
 | M4 (10 Core)  | n/a  |432.2 FPS|127 M Keys/s|195 M Keys/s|
 | M4 Pro (20 Core)  | n/a  |912.2 FPS|267 M Keys/s||
 | M4 Max (40 Core)  | n/a  |1756 FPS|518 M Keys/s||
-| M5 Pro (16 Core)  | n/a  |||||315 M Keys/s|
+| M5 Pro (16 Core)  | n/a  |||315 M Keys/s|
 
 
 
