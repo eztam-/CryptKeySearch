@@ -91,10 +91,10 @@ Always verify that key matching still works when experimenting with this setting
 
 Here are some recommended settings, tested on various GPUs:
 
-|GPU|GRID_SIZE|KEYS_PER_THREAD|THREADS_PER_THREADGROUP|RING_BUFFER_SIZE|
-|---|---------|---------------|-----------------------|----------------|
-|M1 Pro 16 Core|1024|1024 \* 32|128|8|
-|M4 10 Core||||
+|GPU|GRID_SIZE|KEYS_PER_THREAD|THREADS_PER_THREADGROUP|RING_BUFFER_SIZE|Measured Performance|
+|---|---------|---------------|-----------------------|----------------|---------------|
+|M1 Pro 16 Core|1024|1024 \* 32|128|8|157 M Keys/s|
+|M5 Pro 16 Core|||||315 M Keys/s|
 
 
 Also be aware, that other programms like background processes consume GPU capacity at the same time or on unpredictable schedules, which might temporary slow down the performance. You can verify this in the Activity Monitor. I have observed that sometimes a reboot helps.
@@ -163,8 +163,8 @@ Doing the same math for other Apple Silicon GPUs:
 | M4 (10 Core)  | n/a  |432.2 FPS|127 M Keys/s|195 M Keys/s|
 | M4 Pro (20 Core)  | n/a  |912.2 FPS|267 M Keys/s||
 | M4 Max (40 Core)  | n/a  |1756 FPS|518 M Keys/s||
+| M5 Pro (16 Core)  | n/a  |||||315 M Keys/s|
 
-The uptick between M1 Pro (16 Core) and M4 (10 Core) despite lower benchmark looks promising.
 
 
 ## Architecture
